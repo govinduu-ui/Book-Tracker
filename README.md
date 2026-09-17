@@ -1,71 +1,59 @@
-# 📚 Personal Library Tracker (Java)
+# Personal Library Tracker
 
-## 📌 Overview
-The **Personal Library Tracker** is a simple Java console application that helps readers keep track of the books they own, are reading, or have finished. It uses file handling to store data, making it lightweight and easy to run without any database setup.
+## Overview
+The Personal Library Tracker is a Java console application designed to help readers manage and track their personal book collection. It utilizes Java file handling for persistent data storage without requiring external database dependencies.
 
----
+## Problem Statement
+Readers often need a lightweight method to organize books they own, track reading status (Read vs. Unread), and filter by genre. This application provides a CLI interface for managing personal reading lists.
 
-## 🎯 Problem Statement
-Many readers lose track of which books they own, which they've already read, and which are still waiting on the shelf. This project provides a simple way to log, search, and manage a personal book collection.
+## Features
+- Add new books with title, author, genre, and reading status
+- View all cataloged books in the collection
+- Search books by genre
+- Update book status to Read
+- Remove books from the library
+- Display library statistics summary (total, read, and unread counts)
+- Persistent storage using local file handling
 
----
+## Technologies
+- Java (JDK 8+)
+- Standard File IO (BufferedReader, BufferedWriter, UTF-8 Charset)
 
-## 🚀 Features
-- ➕ Add new books (title, author, genre, status)
-- 📄 View all books in your library
-- 🔍 Search books by genre
-- ✅ Mark a book as "Read"
-- ❌ Delete a book from your library
-- 📊 View a summary (total, read, unread counts)
-- 💾 Persistent storage using file handling
-
----
-
-## 🛠️ Technologies Used
-- Java
-- File Handling (BufferedReader, BufferedWriter)
-
----
-
-## 📂 Project Structure
+## Project Structure
 ```
-BYOP-Book-Tracker/
-│   ├── Main.java
-│   ├── Book.java
-│   ├── LibraryManager.java
-│   ├── README.md
-│   └── data/
-│       └── books.txt   (created automatically on first run)
+Book-Tracker/
+├── Book.java
+├── LibraryManager.java
+├── Main.java
+├── README.md
+└── data/
+    └── books.txt
 ```
 
----
+## How to Run
 
-## ▶️ How to Run the Project
-
-### 1️⃣ Clone / Download the Project
-```
-git clone <your-repo-url>
+### 1. Clone the Repository
+```bash
+git clone https://github.com/govinduu-ui/Book-Tracker.git
 ```
 
-### 2️⃣ Navigate to Project Folder
-```
-cd BYOP-Book-Tracker
+### 2. Navigate to Project Directory
+```bash
+cd Book-Tracker
 ```
 
-### 3️⃣ Compile the Java Files
-```
+### 3. Compile Java Source Files
+```bash
 javac *.java
 ```
 
-### 4️⃣ Run the Application
-```
+### 4. Run Application
+```bash
 java Main
 ```
 
----
-
-## 📸 Sample Output
-```
+## Sample Output
+```text
 === Personal Library Tracker ===
 1. Add Book
 2. View All Books
@@ -83,38 +71,26 @@ Status (Read/Unread): Unread
 Book Added Successfully!
 ```
 
----
-
-## 💾 Data Storage
-All books are stored in:
-```
+## Data Storage
+All book records are stored locally in:
+```text
 data/books.txt
 ```
 
-Example:
-```
+Format:
+```text
 Atomic Habits,James Clear,Self-Help,Unread
 1984,George Orwell,Dystopian,Read
 ```
 
----
-
-## 🧠 Concepts Used
+## Core Concepts
 - Object-Oriented Programming (OOP)
-- Classes and Objects
-- Encapsulation
-- File Handling in Java
-- Collections (ArrayList)
+- Encapsulation & Data Modeling
+- File Handling & Data Persistence
+- Java Collections Framework (ArrayList)
 
----
-
-## ⚡ Future Enhancements
-- 🔍 Search by author or title
-- ⭐ Add star ratings and personal notes
-- 📅 Track start/finish dates for each book
-- 🎨 GUI version using Java Swing
-
----
-
-## 👨‍💻 Author
-Built as a companion project to the Student Expense Tracker BYOP project.
+## Future Enhancements
+- Search by author or title
+- Star ratings and personal notes
+- Start/finish date tracking
+- Graphical User Interface (Java Swing / JavaFX)
