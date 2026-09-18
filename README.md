@@ -94,3 +94,7 @@ Atomic Habits,James Clear,Self-Help,Unread
 - Star ratings and personal notes
 - Start/finish date tracking
 - Graphical User Interface (Java Swing / JavaFX)
+
+## Author
+Govinda Das
+24BCY10282
